@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Angelkurten\Countries\Models\Countries;
+use AngelKurten\Countries\Models\Countries;
 
 class CountriesSeeder extends Seeder {
 
