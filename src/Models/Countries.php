@@ -1,6 +1,6 @@
 <?php
 
-namespace Angelkurten\Countries\Models;
+namespace AngelKurten\Countries\Models;
 
 class Countries
 {
