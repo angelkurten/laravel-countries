@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Migrations\Migration;
 
-class SetupCountriesTable extends Migration {
+class CreateCountriesTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -16,14 +16,14 @@ class SetupCountriesTable extends Migration {
 		{
 			$table->increments('id');
 			$table->string('iso2', 2)->default('');
-		    $table->string('short_name', 255)->nullable();
+		    	$table->string('short_name', 255)->nullable();
 			$table->string('long_name', 255)->nullable();
-            $table->string('iso3', 3)->default('');
-            $table->string('numcode', 3)->default('');
-            $table->string('un_number', 3)->default('');
-            $table->string('calling_code', 3)->nullable();
-            $table->string('cctld', 5)->default('');
-		    $table->string('spanish_name', 255)->default('');
+            		$table->string('iso3', 3)->default('');
+            		$table->string('numcode', 3)->default('');
+            		$table->string('un_number', 3)->default('');
+            		$table->string('calling_code', 3)->nullable();
+            		$table->string('cctld', 5)->default('');
+		    	$table->string('spanish_name', 255)->default('');
 		});
 	}
 
