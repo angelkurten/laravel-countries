@@ -1,6 +1,6 @@
 <?php
 
-namespace angelkurten\countries;
+namespace Angelkurten\Countries;
 
 use Illuminate\Support\ServiceProvider;
 
