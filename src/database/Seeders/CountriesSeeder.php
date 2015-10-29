@@ -25,7 +25,7 @@ class CountriesSeeder extends Seeder {
                 'long_name'  => $country['long_name'],
                 'iso3'  => $country['iso3'],
                 'numcode'  => $country['numcode'],
-                'un_number'  => $country['un_number'],
+                'un_member'  => $country['un_member'],
                 'calling_code'  => $country['calling_code'],
                 'cctld'  => $country['cctld'],
                 'spanish_name'  => $country['spanish_name'],
