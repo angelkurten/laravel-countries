@@ -23,7 +23,7 @@ class Countries
     {
         //Get the countries from the JSON file
         if (sizeof(Countries::$countries) == 0){
-            Countries::$countries = json_decode(file_get_contents(__DIR__ . '/Models/countries.json'), true);
+            Countries::$countries = json_decode(file_get_contents(__DIR__ . '/countries.json'), true);
         }
 
         //Return the countries
