@@ -8,10 +8,10 @@
       "name": "Angel Kurten",
       "email": "angelkurten@hotmail.com"
     }
-    "autoload": {
+  ]
+  "autoload": {
         "psr-4": {
             "AngelKurten\\Countries\\": "src/"
         },
     },
-  ]
 }
