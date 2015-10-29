@@ -14,20 +14,15 @@ class LaravelCountriesServicesProvider extends ServiceProvider
     public function boot()
     {
         // The publication files to publish
-        $this->publishes([__DIR__ . '/../../config/config.php' => config_path('countries.php')]);
+        $this->publishes([__DIR__ . '/config/config.php' => config_path('countries.php')]);
 
         $this->publishes([
-            __DIR__.'/../database/Seeders/' => database_path('seeders')
+            __DIR__.'/database/Seeders/' => database_path('seeds')
         ], 'seeders');
 
         $this->publishes([
-            __DIR__.'/../database/migrations/' => database_path('migrations')
+            __DIR__.'/database/migrations/' => database_path('migrations')
         ], 'migrations');
-
-        // Append the country settings
-        $this->mergeConfigFrom(
-            __DIR__ . '/../../config/config.php', 'countries'
-        );
     }
 
     /**
@@ -37,6 +32,9 @@ class LaravelCountriesServicesProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        // Append the country settings
+        $this->mergeConfigFrom(
+            __DIR__ . '/config/config.php', 'countries'
+        );
     }
 }
