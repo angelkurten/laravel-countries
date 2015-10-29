@@ -1,17 +1,17 @@
 {
-  "name": "angelkurten/countries",
-  "description": "Countries for Laravel in Spanish and English",
-  "license": "MIT",
-  "keywords": ["laravel", "countries", "spanish"],
-  "authors": [
-    {
-      "name": "Angel Kurten",
-      "email": "angelkurten@hotmail.com"
-    }
-  ],
-  "autoload": {
+    "name": "angelkurten/countries",
+    "description": "Countries for Laravel in Spanish and English",
+    "license": "MIT",
+    "keywords": ["laravel", "countries", "spanish"],
+    "authors": [
+        {
+            "name": "Angel Kurten",
+            "email": "angelkurten@hotmail.com"
+        }
+    ],
+    "autoload": {
         "psr-4": {
             "AngelKurten\\Countries\\": "src/"
-        },
-    },
+        }
+    }
 }
